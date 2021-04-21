@@ -13,4 +13,4 @@ ur code in here
 ````
 
 ## Attention:
-This bot uses the exec function which is evil and can be used to destroy your pc and everything you love so use on guilds you trust
+__This bot uses the exec function which is evil and can be used to destroy your pc and everything you love so use on guilds you trust__
