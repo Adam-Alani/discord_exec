@@ -22,9 +22,7 @@ class MyClient(discord.Client):
 
 
 def is_py_code(input):
-    if input.startswith('```') and "py" in input and input.endswith('```'):
-        return True
-    return False
+    return input.startswith('```') and "py" in input and input.endswith('```')
 
 
 def clean_input(input):
