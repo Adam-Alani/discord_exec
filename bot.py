@@ -4,12 +4,10 @@ from io import StringIO
 import contextlib
 
 TOKEN = ''
-CHANNEL_ID = 781493212060712964
+CHANNEL_ID = '''INTEGER HERE'''
+
 
 class MyClient(discord.Client):
-    async def on_ready(self):
-        print('Logged on as {0}!'.format(self.user))
-
     async def on_message(self, message):
         print('Message from {0.author}: {0.content}'.format(message))
         if is_py_code(message.content):
@@ -19,7 +17,7 @@ class MyClient(discord.Client):
                 try:
                     exec(input)
                 except:
-                    print("Something wrong with the code")
+                    print("error occurred")
             await channel.send(s.getvalue())
 
 
